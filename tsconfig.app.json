@@ -5,6 +5,10 @@
     "outDir": "./out-tsc/app",
     "types": []
   },
+  "scripts": {
+    
+    "compodoc": "npx compodoc -p src/tsconfig.app.json"
+  },
   "files": [
     "src/main.ts"
   ],

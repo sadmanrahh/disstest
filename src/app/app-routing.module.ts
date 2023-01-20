@@ -14,6 +14,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/pokemon/pokemon.module').then((m) => m.PokemonModule),
   },
+  { 
+  path: 'user', 
+  loadChildren: () => 
+  import('./features/user/user.module').then(m => m.UserModule),
+},
   
   
   {

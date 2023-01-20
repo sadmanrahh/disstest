@@ -44,16 +44,12 @@
     </section>
     
 <div class="container">
-    <div class="header">
-      <img src="assets/NgPokedex.png" />
-    </div>
+    
     <div class="content">
       <div class="list">
         <div class="list-header">
           <h3>List of Models</h3>
-          <button class="nav-btn" (click)="addPokemon()">
-            Add Models
-          </button>
+          
         </div>
         <app-list
           [pokemon$]="allPokemon$"
@@ -68,7 +64,6 @@
       ></app-detail>
     </div>
   </div>
-
   <section id="skills">
     <div class="sidebar3"></div>
     <div class="sidebar4"></div>

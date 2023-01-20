@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { TestComponent } from './test/test.component';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { environment2 } from '../environments/environment2';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,15 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebaseProject2)),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
-    provideFirebaseApp(() => initializeApp(environment.firebaseProject1)),
-    provideAuth(() => getAuth()),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

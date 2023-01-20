@@ -1,4 +1,4 @@
-export interface Pokemon {
+export interface User {
     height: number;
     id: string;
     description: string;
@@ -8,6 +8,6 @@ export interface Pokemon {
     weight: number;
   }
 
-  export interface PokemonComponent {}
+  export interface UserComponent {}
 
   
