@@ -10,11 +10,13 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { TestComponent } from './test/test.component';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { environment2 } from '../environments/environment2';
+import { ContactComponent } from './features/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
