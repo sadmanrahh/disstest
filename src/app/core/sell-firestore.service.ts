@@ -14,10 +14,11 @@ import { Observable } from 'rxjs';
 import { Pokemon } from '../features/pokemon/interfaces/pokemon.interface';
 
 
+
 @Injectable({
   providedIn: 'root',
 })
-export class PokedexFirestoreService {
+export class SellFirestoreService {
   private pokemonCollection: CollectionReference<DocumentData>;
 
   constructor(private readonly firestore: Firestore) {
@@ -33,6 +34,7 @@ export class PokedexFirestoreService {
   get(id: string) {
     const pokemonDocumentReference = doc(this.firestore, `pokemon/${id}`);
     return docData(pokemonDocumentReference, { idField: 'id' });
+    
   }
 
   create(pokemon: Pokemon) {
